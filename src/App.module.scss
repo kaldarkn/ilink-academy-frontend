@@ -1,0 +1,110 @@
+@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
+
+@font-face {
+  font-family: 'Factor A';
+  src: local('Factor A Medium'), local('Factor-A-Medium'),
+    url('./fonts/factorAMedium/FactorAMedium-Regular.woff2') format('woff2'),
+    url('./fonts/factorAMedium/FactorAMedium-Regular.woff') format('woff'),
+    url('./fonts/factorAMedium/FactorAMedium-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.App {
+  position: relative;
+  .content {
+    // position: relative;
+    max-width: 100%;
+    //Нашел в интернете, чтобы футер прижать к концу страницы
+    min-height: calc(100vh - 12.5vw);
+
+    .welcome {
+      margin: 0px 0px;
+      position: relative;
+      top: 6.45833333vw;
+      left: 5.55555555vw;
+      width: 80.3472222vw;
+      height: 20.5555555vw;
+      font-family: 'Factor A';
+      font-weight: 500;
+      font-size: 8.61111111vw;
+      line-height: 10.2777778vw;
+      letter-spacing: -0.0124em;
+      color: #ffffff;
+    }
+
+    .avatar {
+      // position: absolute;
+      // top: 35.3472222vw;
+      // left: 5.55555555vw;
+      position: relative;
+      top: 13.1944444vw;
+      left: 5.55555555vw;
+      width: 36.0416666vw;
+      height: 26.5972222vw;
+      border-radius: 0.138888889vw;
+    }
+
+    .card {
+      // position: absolute;
+      // left: 41.5972222vw;
+      // top: 33.125vw;
+      position: relative;
+      top: -16.9722222vw;
+      left: 41.5972222vw;
+      width: 52.8472222vw;
+      height: 26.5972222vw;
+    }
+    .reviews {
+      // position: absolute;
+      // top: 70.2777778vw;
+      position: relative;
+      top: -3.81944444vw;
+      width: 83.1944444vw;
+      height: 36.4583333vw;
+    }
+  }
+
+  //Для мобилки
+  @media (max-width: 540px) {
+    .content {
+      height: 500.25vw;
+      .welcome {
+        // top: 13.4375vw;
+        // left: 5vw;
+        top: 13.4375vw;
+        left: 5vw;
+        width: 90vw;
+        height: 49.6875vw;
+        font-size: 15vw;
+        line-height: 16.875vw;
+        letter-spacing: -0.0124em;
+        color: #ffffff;
+      }
+      .avatar {
+        // top: 83.125vw;
+        // left: 5vw;
+        top: 32vw;
+        left: 5vw;
+        width: 95vw;
+        height: 62.5vw;
+        border-radius: 0.625vw;
+      }
+
+      .card {
+        width: 90vw;
+        height: auto;
+        // left: 5vw;
+        // top: 142.1875vw;
+        left: 5vw;
+        top: 28vw;
+      }
+
+      .reviews {
+        width: 95vw;
+        height: 149.6875vw;
+        top: 50vw;
+      }
+    }
+  }
+}

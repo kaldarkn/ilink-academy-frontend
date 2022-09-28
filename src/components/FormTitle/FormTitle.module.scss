@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.184713375%;
+  h1 {
+    margin: 0;
+    font-family: 'Factor A';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.66666667vw;
+    line-height: 1.944444444vw;
+    letter-spacing: -0.0124em;
+    color: #333333;
+  }
+
+  .hideForm {
+    cursor: pointer;
+    width: 3.82165605%;
+    height: 3.82165605%;
+  }
+}
+@media (max-width: 540px) {
+  .header {
+    margin-bottom: 7.8125%;
+    h1 {
+      font-size: 6.25vw;
+      line-height: 7.5vw;
+      letter-spacing: -0.0124em;
+    }
+
+    .hideForm {
+      width: 8.1640625%;
+      height: 100%;
+    }
+  }
+}

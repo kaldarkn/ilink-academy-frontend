@@ -1,0 +1,128 @@
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+//Для компьютера
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.22222222vw 5.55555555vw;
+  height: 8.05555555vw;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  .user {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 1.38888889vw;
+      width: 3.61111111vw;
+      height: 3.61111111vw;
+      border-radius: 0.138888889vw;
+    }
+
+    p {
+      &:before {
+        content: 'Кайрат Калдар';
+      }
+      font-family: 'Gilroy-Bold', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.25vw;
+      line-height: 1.25vw;
+      color: #333333;
+    }
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+
+    .ilink {
+      width: 5.93263889vw;
+      height: 2.23541667vw;
+      margin-bottom: 0.515972222vw;
+    }
+
+    .academy {
+      width: 5.93263889vw;
+      height: 0.859722222vw;
+    }
+  }
+
+  button {
+    border: 0;
+    width: 15.7638889vw;
+    height: 3.61111111vw;
+    background: #585cc6;
+    border-radius: 0.138888889vw;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 1.25vw;
+    line-height: 1.25vw;
+    color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient(to right, #696dc8, #585cc6);
+    }
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+//Для мобилки
+@media (max-width: 540px) {
+  .header {
+    height: 24.0625vw;
+    padding: 6.25vw 5vw;
+
+    .user {
+      img {
+        margin-right: 2.5vw;
+        width: 11.25vw;
+        height: 11.25vw;
+      }
+
+      p {
+        font-size: 3.75vw;
+        line-height: 4.375vw;
+        &::before {
+          content: 'Кайрат';
+        }
+      }
+    }
+
+    .logo {
+      .ilink {
+        width: 18.48125vw;
+        height: 6.965625vw;
+        margin-bottom: 1.60625vw;
+      }
+
+      .academy {
+        width: 18.48125vw;
+        height: 2.678125vw;
+      }
+    }
+
+    button {
+      display: none;
+    }
+
+    svg {
+      display: block;
+      width: 11.25vw;
+      height: 11.25vw;
+      fill: #585cc6;
+      padding-left: 14.0625vw;
+      cursor: pointer;
+
+      &:hover {
+        fill: #696dc8;
+      }
+    }
+  }
+}

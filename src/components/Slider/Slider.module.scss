@@ -1,0 +1,21 @@
+.window {
+  overflow: hidden;
+  width: 75.4166666vw;
+
+  .slider {
+    display: flex;
+    justify-content: space-between;
+    transition: all 1s ease-out;
+    column-gap: 1.66666667vw;
+
+    * {
+      flex-shrink: 0;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .window {
+    width: 86.7vw;
+  }
+}

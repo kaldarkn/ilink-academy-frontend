@@ -1,0 +1,62 @@
+.comment {
+  position: relative;
+
+  textarea {
+    margin-top: 1.91082803%;
+    margin-bottom: 5.0955414%;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 7.29166666vw;
+    border: 0.0694444444vw solid #e0e0e0;
+    border-radius: 0.138888889vw;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.972222222vw;
+    line-height: 1.52777778vw;
+    resize: none;
+    padding-top: 1.91082803%;
+    color: #8a8a8a;
+    padding-left: 1.91082803%;
+    transition: border-color 0.6s linear;
+  }
+
+  span {
+    position: absolute;
+    bottom: 3.80952381%;
+    right: 0.637%;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.694444444vw;
+    line-height: 0.972222222vw;
+    color: #8a8a8a;
+  }
+}
+
+@media (max-width: 540px) {
+  .comment {
+    margin-top: 3.125%;
+    margin-bottom: 12.5%;
+    textarea {
+      margin: 0;
+      width: 100%;
+      height: 32.8125vw;
+      border: 0.3125vw solid #e0e0e0;
+      border-radius: 0.625vw;
+      font-size: 4.375vw;
+      line-height: 6.875vw;
+      padding-top: 3.75vw;
+      padding-right: 3.75vw;
+      padding-left: 3.75vw;
+    }
+
+    span {
+      bottom: 1.25vw;
+      right: 1.25vw;
+      font-size: 3.125vw;
+      line-height: 4.375vw;
+    }
+  }
+}

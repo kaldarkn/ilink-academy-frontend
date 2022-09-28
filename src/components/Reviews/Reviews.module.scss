@@ -1,0 +1,86 @@
+.wrapper {
+  .reviews {
+    background-color: white;
+    padding: 3.88888889vw 3.88888889vw 3.05555555vw 5.55555555vw;
+    box-sizing: border-box;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3.57815443%;
+      h1 {
+        margin: 0;
+        font-family: 'Factor A';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 5.5rem;
+        letter-spacing: -0.0124em;
+        color: #333333;
+      }
+
+      .bigBtn {
+        width: 13.75rem;
+        height: 4.23076923rem;
+        cursor: pointer;
+      }
+
+      .smallBtn {
+        cursor: pointer;
+        display: none;
+      }
+    }
+  }
+
+  .nextBtn {
+    width: 3.88888889vw;
+    height: 3.88888889vw;
+    position: absolute;
+    right: -11.9444444vw;
+    bottom: 0;
+    cursor: pointer;
+  }
+
+  .prevBtn {
+    width: 3.88888889vw;
+    height: 3.88888889vw;
+    position: absolute;
+    right: -6.94444444vw;
+    bottom: 0;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 540px) {
+  .wrapper {
+    .reviews {
+      background: white;
+      padding: 6.25vw 4.6875vw 15vw 5.3125vw;
+
+      .header {
+        margin-bottom: 7.72058824%;
+        h1 {
+          font-size: 9.00000001rem;
+          line-height: 11.8125rem;
+          letter-spacing: -0.0124em;
+        }
+        .bigBtn {
+          display: none;
+        }
+
+        .smallBtn {
+          display: block;
+          width: 11.8125rem;
+          height: 11.8125rem;
+        }
+      }
+    }
+    .nextBtn {
+      display: none;
+    }
+    .prevBtn {
+      display: none;
+    }
+  }
+}

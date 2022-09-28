@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #585cc6 url('./assets/img/Vector.svg');
+  background-repeat: no-repeat;
+  background-position: 55.5555555vw 0vw;
+  min-height: 100vh;
+}
+
+html {
+  font-size: 1.11111111vw;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@media (max-width: 540px) {
+  body {
+    background-position: -1.5625vw -60.3125vw;
+  }
+}

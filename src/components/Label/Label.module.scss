@@ -1,0 +1,16 @@
+.question {
+  font-family: 'Factor A';
+  font-style: normal;
+  color: #333333;
+  font-weight: 500;
+  font-size: 1.11111111vw;
+  line-height: 1.3888888889vw;
+  letter-spacing: -0.0124em;
+}
+@media (max-width: 540px) {
+  .question {
+    font-size: 4.375vw;
+    line-height: 5.625vw;
+    letter-spacing: -0.0124em;
+  }
+}

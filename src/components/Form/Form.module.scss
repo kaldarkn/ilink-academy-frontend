@@ -1,0 +1,41 @@
+//Перенести в адаптив
+label {
+  sup {
+    color: red;
+    margin-left: 4px;
+    font-family: 'Factor A';
+    font-size: 10px;
+  }
+}
+.wrapper {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  user-select: none;
+
+  .form {
+    margin: 0 auto;
+    width: 46.94444444%;
+    min-height: 30.763888889vw;
+    box-sizing: border-box;
+    position: relative;
+    top: 3vw;
+    padding: 1.66666667%;
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: 540px) {
+  .wrapper {
+    .form {
+      width: 90%;
+      // min-height: 538px;
+      top: 9.375vw;
+      padding: 5%;
+    }
+  }
+}
