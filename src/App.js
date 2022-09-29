@@ -33,13 +33,16 @@ function App() {
   let [fetchSuccess, setFetchSuccess] = useState(false);
   let [fetchError, setFetchError] = useState(false);
   let [comments, setComments] = useState([]);
-  console.log(`${SERVER_PATH}/comments`);
+
   //Получим все комментарии
   useEffect(() => {
     try {
       axios
-        .get(`${SERVER_PATH}/comments`)
-        .then((res) => setComments(res.data))
+        // .get(`${SERVER_PATH}/comments`)
+        // .then((res) => setComments(res.data))
+        // .catch((err) => alert('Произошла ошибка', err));
+        .get(`${SERVER_PATH}/test`)
+        .then((res) => console.log(res))
         .catch((err) => alert('Произошла ошибка', err));
     } catch (error) {
       console.warn(error);
