@@ -10,7 +10,7 @@ import Label from '../Label';
 import FormTitle from '../FormTitle';
 import styles from './Form.module.scss';
 
-const SERVER_PATH = 'http://192.168.0.102:4444';
+const SERVER_PATH = process.env.REACT_APP_API_URL;
 
 //Правила валидации и информация в случае неправильной валидации
 const VALIDATION_RULES = {
@@ -115,7 +115,7 @@ const Form = ({ openForm, setSuccess, setError }) => {
         photo: fileData.url,
       };
       axios
-        .post(`${SERVER_PATH}/comments`, data)
+        .post(`${SERVER_PATH}/2comments`, data)
         .then(() => {
           openForm(false);
           setSuccess(true);

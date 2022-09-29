@@ -10,7 +10,7 @@ import ErrorMessage from './components/ErrorMessage';
 import userPhoto from './assets/img/photo.jpg';
 import styles from './App.module.scss';
 
-const SERVER_PATH = 'http://192.168.0.102:4444';
+const SERVER_PATH = process.env.REACT_APP_API_URL;
 
 const MY_INFO = {
   name: 'Калдар Кайрат',
