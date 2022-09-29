@@ -38,7 +38,7 @@ function App() {
   useEffect(() => {
     try {
       axios
-        .get(`${SERVER_PATH}comments`)
+        .get(`${SERVER_PATH}/comments`)
         .then((res) => setComments(res.data))
         .catch((err) => alert('Произошла ошибка', err));
     } catch (error) {
