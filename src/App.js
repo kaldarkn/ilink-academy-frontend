@@ -33,7 +33,7 @@ function App() {
   let [fetchSuccess, setFetchSuccess] = useState(false);
   let [fetchError, setFetchError] = useState(false);
   let [comments, setComments] = useState([]);
-
+  console.log(`${SERVER_PATH}/comments`);
   //Получим все комментарии
   useEffect(() => {
     try {
