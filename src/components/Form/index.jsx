@@ -115,7 +115,7 @@ const Form = ({ openForm, setSuccess, setError }) => {
         photo: fileData.url,
       };
       axios
-        .post(`${SERVER_PATH}/2comments`, data)
+        .post(`${SERVER_PATH}/comments`, data)
         .then(() => {
           openForm(false);
           setSuccess(true);
