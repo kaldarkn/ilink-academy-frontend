@@ -67,7 +67,7 @@ const Form = ({ openForm, setSuccess, setError }) => {
           },
         };
         axios
-          .post(`${SERVER_PATH}/upload`, formData, config)
+          .post(`${SERVER_PATH}upload`, formData, config)
           .then((res) => {
             //Сервер в ответе присылает URL картинки, который нужно сохранить в state
             setFileData((data) => ({
@@ -91,7 +91,7 @@ const Form = ({ openForm, setSuccess, setError }) => {
   const handlerDeleteFile = () => {
     try {
       axios
-        .post(`${SERVER_PATH}/delete`, { photo: fileData.url.replace(`${SERVER_PATH}/`, '') })
+        .post(`${SERVER_PATH}delete`, { photo: fileData.url.replace(`${SERVER_PATH}`, '') })
         .then(() => {
           setFileData({ name: '', size: 0, progressLoaded: 0, url: '', loaded: false });
         })
@@ -115,7 +115,7 @@ const Form = ({ openForm, setSuccess, setError }) => {
         photo: fileData.url,
       };
       axios
-        .post(`${SERVER_PATH}/2comments`, data)
+        .post(`${SERVER_PATH}comments`, data)
         .then(() => {
           openForm(false);
           setSuccess(true);
