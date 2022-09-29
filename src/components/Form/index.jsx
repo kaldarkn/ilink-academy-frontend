@@ -19,7 +19,7 @@ const VALIDATION_RULES = {
     'Используйте только кириллицу и пробелы',
   ],
   comment: (e) => [e.target.value.length <= 200, 'Нельзя ввести более 200 символов'],
-  captcha: (e) => [true, 'Введите код с картинки'],
+  captcha: () => [true, 'Введите код с картинки'],
 };
 
 const Form = ({ openForm, setSuccess, setError }) => {

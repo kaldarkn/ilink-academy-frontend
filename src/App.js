@@ -38,11 +38,8 @@ function App() {
   useEffect(() => {
     try {
       axios
-        // .get(`${SERVER_PATH}/comments`)
-        // .then((res) => setComments(res.data))
-        // .catch((err) => alert('Произошла ошибка', err));
-        .get(`${SERVER_PATH}/test`)
-        .then((res) => console.log(res))
+        .get(`${SERVER_PATH}/comments`)
+        .then((res) => setComments(res.data))
         .catch((err) => alert('Произошла ошибка', err));
     } catch (error) {
       console.warn(error);
