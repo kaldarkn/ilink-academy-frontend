@@ -21,7 +21,7 @@ const VALIDATION_RULES = {
   comment: (e) => [e.target.value.length <= 200, 'Нельзя ввести более 200 символов'],
   captcha: () => [true, 'Введите код с картинки'],
 };
-console.log(123);
+
 const Form = ({ openForm, setSuccess, setError }) => {
   let [fileData, setFileData] = useState({
     name: '',
